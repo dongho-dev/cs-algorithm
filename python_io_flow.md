@@ -12,7 +12,7 @@ if not line:
     raise EOFError
 return line.rstrip('\n')         # 오른쪽 끝의 개행문자만 제거
 ```
-v
+
 - `rstrip('\n')`만 호출하므로 앞·뒤 공백(스페이스, 탭)은 **그대로 유지**.  
 - 대량 입력에서는 `sys.stdin.readline()`만 사용하는 것이 불필요한 오버헤드를 줄여 **속도** 면에서 유리함.
 
